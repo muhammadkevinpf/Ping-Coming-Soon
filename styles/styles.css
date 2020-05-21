@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Libre Franklin", serif;
+  outline: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+body img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#illustration {
+  width: 40vw;
+}
+
+.welcome-title h1 {
+  font-weight: 400;
+  color: #969696;
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+}
+
+.welcome-title span {
+  font-weight: 700;
+  color: #151f29;
+}
+
+.input {
+  padding-top: 5vh;
+  padding-bottom: 8vh;
+  width: 40vw;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "input button" "error error";
+  -webkit-column-gap: 1vw;
+          column-gap: 1vw;
+  row-gap: 1.5vh;
+}
+
+.input ::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+.input :-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.input ::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.input ::placeholder {
+  color: #c2d3ff;
+}
+
+.input input {
+  border: 1px solid #c2d3ff;
+  padding: 1em 1.8em;
+  border-radius: 40px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: input;
+}
+
+.input button {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: button;
+  font-weight: 600;
+  background-color: #4f7df3;
+  border: none;
+  color: #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  -webkit-box-shadow: -1px 2px 5px 2px rgba(79, 125, 243, 0.32);
+          box-shadow: -1px 2px 5px 2px rgba(79, 125, 243, 0.32);
+  padding: 1em 1.8em;
+}
+
+.input button:hover {
+  background-color: #c2d3ff;
+}
+
+.input span {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: error;
+  color: #ff5263;
+  font-style: italic;
+  font-size: 0.8em;
+  margin-left: 2vw;
+  display: none;
+}
+
+.social {
+  margin-top: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social span {
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  color: #4f7df3;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 2px #888;
+          box-shadow: 0px 0px 2px #888;
+  padding: 0.5em 0.6em;
+}
+
+.social span:first-child {
+  padding: 0.5em 0.8em;
+}
+
+.social span:hover {
+  background-color: #4f7df3;
+  color: #c2d3ff;
+}
+
+footer {
+  margin-top: 2vh;
+  color: #969696;
+}
+
+@media only screen and (max-width: 660px) {
+  #illustration {
+    width: 85vw;
+  }
+  .input {
+    width: 80vw;
+        grid-template-areas: "input" "error" "button";
+  }
+  .social {
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social span {
+    font-size: 1.2em;
+    margin-right: 2vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
